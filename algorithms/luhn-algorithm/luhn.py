@@ -8,8 +8,6 @@ def verify_card_number(card_number: str) -> str:
     if not s:
         return 'INVALID!'
 
-    # Luhn algorithm: starting from the rightmost digit (check digit), moving left,
-    # double every second digit (i.e., digits in even positions from the right, 0-based)
     total = 0
     reverse_digits = s[::-1]
     for i, ch in enumerate(reverse_digits):
