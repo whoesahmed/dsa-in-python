@@ -183,7 +183,7 @@ if __name__ == '__main__':
                 break
             print("Please enter a positive integer greater than 0.")
         except ValueError:
-            print("Invalid input! Please enter a whole number.")
+            print("Invalid input! Please enter a Whole Number.")
 
     print("\nSelect animation delay (seconds per move):")
     try:
