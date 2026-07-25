@@ -2,7 +2,7 @@ class LinkedList:
     class Node:
         def __init__(self, element):
             self.element = element
-            self.next = None
+            self.next: 'LinkedList.Node | None' = None
             
     def __init__(self):
         self.length = 0
@@ -17,9 +17,10 @@ class LinkedList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next is not None:
+            while current_node is not None and current_node.next is not None:
                 current_node = current_node.next
-            current_node.next = node
+            if current_node is not None:
+                current_node.next = node
         self.length += 1
 
     def remove(self, element):
