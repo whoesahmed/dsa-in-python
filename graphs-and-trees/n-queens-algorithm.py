@@ -33,3 +33,11 @@ def dfs_n_queens(n):
 
     backtrack(0)
     return solutions
+
+
+if __name__ == '__main__':
+    n = 4
+    solutions = dfs_n_queens(n)
+    print(f'Total solutions for {n}-queens: {len(solutions)}')
+    for solution in solutions:
+        print(solution)
