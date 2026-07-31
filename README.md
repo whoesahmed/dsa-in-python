@@ -1,77 +1,78 @@
-# DSA-in-Python
+# DSA in Python
 
-Python implementations of data structures and algorithms I've been working through while learning DSA. Nothing fancy — just clean, runnable code organized by topic.
+Python implementations of core data structures and algorithms, built while working through a structured DSA curriculum. Organized by topic — each file is a focused, standalone implementation with its time/space complexity noted.
 
-Most files are standalone scripts. Clone the repo, run one, read the output. That's basically it.
+## Structure
+
+**Algorithms**
+
+| File | Complexity |
+|---|---|
+| `binary-search/binary_search_algo.py` | O(log n) |
+| `bisection-sort/bisection.py` | O(log n) — bisection method |
+| `luhn-algorithm/luhn.py` | O(n) — card validation |
+| `merge-sort/merge_algo.py` | O(n log n) time, O(n) space |
+| `quicksort/quick_sort.py` | O(n log n) avg, O(n²) worst |
+| `selection-sort/selection_sort.py` | O(n²) |
+| `tower-of-hanoi/hanoi_solver.py` | O(2ⁿ) |
+
+**Graphs & Trees**
+
+| File | Complexity |
+|---|---|
+| `adjacency-list-to-matrix.py` | O(V²) |
+| `BFS.py` | O(V + E) |
+| `DFS.py` | O(V + E) |
+| `n-queens-algorithm.py` | O(N!) — backtracking |
+| `shortest-path-algorithm.py` | O((V + E) log V) — Dijkstra |
+
+**Dynamic Programming**
+
+| File | Complexity |
+|---|---|
+| `fibonacci_series.py` | O(n) time, O(1) space — bottom-up |
+
+**Linear Data Structures**
+
+| File | Complexity |
+|---|---|
+| `hash-table/hash-table.py` | O(1) average — add / lookup / remove |
+| `hash-table/linked_list.py` | O(n) — add / remove, singly linked |
 
 ## Setup
 
-You'll need **Python 3.10+**. Everything here uses the standard library — no pip installs required.
+Requires Python 3.10+. Standard library only — no external dependencies.
 
 ```bash
 git clone https://github.com/whoesahmed/dsa-in-python.git
 cd dsa-in-python
 ```
 
-If you like using a venv anyway:
+## Running
+
+Each file runs standalone:
 
 ```bash
-python -m venv venv
-venv\Scripts\activate       # Windows
-pip install -r requirements.txt
-```
-
-(`requirements.txt` is empty on purpose — kept it there out of habit.)
-
-## What's in here
-
-**Algorithms**
-- Binary search
-- Merge sort & selection sort
-- Square root via bisection
-- Luhn algorithm (card number validation)
-- Tower of Hanoi — this one's fun, it opens a turtle animation window
-
-**Graphs & Trees**
-- DFS on an adjacency matrix
-- Dijkstra's shortest path
-- N-Queens (backtracking)
-- Adjacency list → matrix converter
-- Valid parentheses generator (uses a BFS-style queue)
-
-**Linear Data Structures**
-- Hash table with chaining
-- Singly linked list
-
-Folder layout if you need it:
-
-```
-algorithms/
-graphs-and-trees/
-linear-data-structures/
-```
-
-## Running things
-
-Pick a file and run it:
-
-```bash
+python algorithms/binary-search/binary_search_algo.py
 python algorithms/merge-sort/merge_algo.py
-python graphs-and-trees/DFS.py
 python graphs-and-trees/shortest-path-algorithm.py
-python linear-data-structures/hash-table/linked_list.py
+python linear-data-structures/hash-table/hash-table.py
 ```
 
-For the Hanoi visualizer, run it locally — it needs a display:
+Tower of Hanoi opens a Turtle graphics window — run locally, not headless:
 
 ```bash
 python algorithms/tower-of-hanoi/hanoi_solver.py
 ```
 
-## Heads up
+## Notes
 
-Some folder names don't perfectly match what's inside yet (yeah, `quicksort/quick_sort.py` is actually binary search right now). I'll clean that up over time. If you spot something off, feel free to open an issue or PR.
+## Notes
+
+Built as part of an ongoing DSA learning path. Code favors clarity over premature optimization — each implementation is meant to demonstrate the underlying concept, not compete with the standard library.
+
+Quicksort uses in-place partitioning (last-element pivot) — worth noting this degrades to O(n²) on already-sorted input; randomized pivot selection would fix that but wasn't needed for this exercise.
 
 ---
 
-Built for learning. Take what's useful, ignore the rest.
+Feedback and PRs welcome.
