@@ -1,4 +1,4 @@
-# dsa-in-python
+# DSA-in-Python
 
 Python implementations of data structures and algorithms I've been working through while learning DSA. Nothing fancy — just clean, runnable code organized by topic.
 
