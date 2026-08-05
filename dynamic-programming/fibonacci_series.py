@@ -17,4 +17,4 @@ def fibonacci_sequence(n):
 
 # Get user input
 n = int(input("Enter the value of n: "))
-print(f"The {n}th Fibonacci Sequence = {fibonacci_sequence(n)}")
+print(f"The {n}th Fibonacci Series is: {fibonacci_sequence(n)}")
