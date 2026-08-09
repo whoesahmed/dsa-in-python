@@ -19,4 +19,3 @@ def binary_search(search_list, value):
 
 print(binary_search([1, 2, 3, 4, 5], 3))
 print(binary_search([1, 2, 3, 4, 5, 9], 4))
-print(binary_search([1, 3, 5, 9, 14, 22], 10))
