@@ -26,8 +26,6 @@ if __name__ == '__main__':
     samples = [
         '453914889',
         '4111-1111-1111-1111',
-        '453914881',
-        '1234 5678 9012 3456',
     ]
     for s in samples:
         print(s, verify_card_number(s))
