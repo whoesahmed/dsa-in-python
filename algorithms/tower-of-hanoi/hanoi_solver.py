@@ -178,14 +178,14 @@ def format_state(rods):
 if __name__ == '__main__':
     while True:
         try:
-            num_disks = int(input("Enter number of disks (e.g., 3-8): "))
+            num_disks = int(input("Enter number of Disks (e.g., 3-8): "))
             if num_disks > 0:
                 break
-            print("Please enter a positive integer greater than 0.")
+            print("Please enter a + integer greater than 0.")
         except ValueError:
             print("Invalid input! Please enter a Whole Number.")
 
-    print("\nSelect animation delay (seconds per move):")
+    print("\nSelect Animation delay (seconds per move):")
     try:
         speed_input = float(input("Enter delay in seconds [Default: 0.3]: ") or 0.3)
     except ValueError:
