@@ -18,4 +18,4 @@ def binary_search(search_list, value):
     return None, "Value not found"
 
 print(binary_search([1, 2, 3, 4, 5], 3))
-print(binary_search([1, 2, 3, 4, 5, 9], 4))
+print(binary_search([1, 2, 3, 4, 5, 9], 10))
