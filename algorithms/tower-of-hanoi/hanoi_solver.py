@@ -181,7 +181,7 @@ if __name__ == '__main__':
             num_disks = int(input("Enter number of Disks (e.g., 3-8): "))
             if num_disks > 0:
                 break
-            print("Please enter a + integer greater than 0.")
+            print("Please enter a +ve integer greater than 0.")
         except ValueError:
             print("Invalid input! Please enter a Whole Number.")
 
@@ -191,5 +191,5 @@ if __name__ == '__main__':
     except ValueError:
         speed_input = 0.3
 
-    print(f"\nStarting Hanoi Solver for {num_disks} disks...")
+    print(f"\nStarting Hanoi Solver for {num_disks} disks..")
     hanoi_solver_visualized(num_disks, delay=speed_input)

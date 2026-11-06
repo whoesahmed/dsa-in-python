@@ -1,6 +1,6 @@
 # DSA in Python
 
-Python implementations of core data structures and algorithms, built while working through a structured DSA curriculum. Organized by topic — each file is a focused, standalone implementation with its time/space complexity noted.
+Python implementations of core data structures and algorithms, built while working through a structured DSA curriculum. Organized by topic, each file is a focused, standalone implementation with its time/space complexity noted.
 
 ## Structure
 
@@ -30,7 +30,7 @@ Python implementations of core data structures and algorithms, built while worki
 
 | File | Complexity |
 |---|---|
-| `fibonacci_series.py` | O(n) time, O(1) space — bottom-up |
+| `fibonacci_series.py` | O(n) time, O(1) space, bottom-up |
 
 **Linear Data Structures**
 
@@ -41,7 +41,7 @@ Python implementations of core data structures and algorithms, built while worki
 
 ## Setup
 
-Requires Python 3.10+. Standard library only — no external dependencies.
+Requires Python 3.10+. Standard library only.
 
 ```bash
 git clone https://github.com/whoesahmed/dsa-in-python.git
@@ -59,7 +59,7 @@ python graphs-and-trees/shortest-path-algorithm.py
 python linear-data-structures/hash-table/hash-table.py
 ```
 
-Tower of Hanoi opens a Turtle graphics window — run locally, not headless:
+Tower of Hanoi opens a Turtle graphics window, run locally, not headless:
 
 ```bash
 python algorithms/tower-of-hanoi/hanoi_solver.py
@@ -69,9 +69,11 @@ python algorithms/tower-of-hanoi/hanoi_solver.py
 
 ## Notes
 
-Built as part of an ongoing DSA learning path. Code favors clarity over premature optimization — each implementation is meant to demonstrate the underlying concept, not compete with the standard library.
+Built as part of an ongoing DSA learning path through freeCodeCamp. Code favors clarity over premature optimization — each implementation is meant to demonstrate the underlying concept, not compete with the standard library.
 
 Quicksort uses in-place partitioning (last-element pivot) — worth noting this degrades to O(n²) on already-sorted input; randomized pivot selection would fix that but wasn't needed for this exercise.
+
+Issues and pull requests are accepted!
 
 ---
 
